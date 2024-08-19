@@ -1,0 +1,38 @@
+[gd_scene load_steps=9 format=3 uid="uid://d3cudr1oe27t6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mm22b"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gvhjn"]
+material = SubResource("StandardMaterial3D_mm22b")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_olcis"]
+albedo_color = Color(0.924696, 0.130179, 0.12172, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vt5aa"]
+material = SubResource("StandardMaterial3D_olcis")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gjid7"]
+albedo_color = Color(0.09268, 0.170874, 0.861348, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f3hit"]
+material = SubResource("StandardMaterial3D_gjid7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u7k07"]
+albedo_color = Color(0.901159, 0.934505, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2e2ux"]
+material = SubResource("StandardMaterial3D_u7k07")
+
+[node name="mesh_lib" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_gvhjn")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_vt5aa")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_f3hit")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_2e2ux")
